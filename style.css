@@ -1,0 +1,68 @@
+body {
+    background-image: linear-gradient(
+      to bottom right,
+      #2d35af,
+      #9aaac2,
+      #747281,
+      #716575,
+      #9b7088,
+      #c75d79
+    );
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+   
+}
+
+.ball{
+    animation: float 3.5s ease-in-out infinite;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    position:relative;
+    background: radial-gradient(
+        circle at 75% 30%,
+        white 5px,
+        aqua 8%,
+        darkblue 60%,
+        aqua 100%
+    );
+}
+
+@keyframes float{
+    0%{
+        transform: translatey(0px);
+    }
+    50%{
+        transform: translatey(-80px);
+    }
+    100%{
+        transform: translatey(0px);
+    }
+}
+
+.shadow {
+    background: #b490b2;
+    width: 150px;
+    height: 40px;
+    top: 70%;
+    animation: expand 4s infinite;
+    position: absolute;
+    border-radius: 50%;
+  }
+
+  @keyframes expand {
+    0%,
+    100% {
+      transform: scale(0.5);
+    }
+  
+    50% {
+      transform: scale(1);
+    }
+  }
+
+  
